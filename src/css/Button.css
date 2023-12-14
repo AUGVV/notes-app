@@ -1,0 +1,31 @@
+.button {
+    height: 270px;
+    width: 200px;
+    border-style: dashed;
+    border-color: white;
+    background-color: transparent;
+    transition: 1s;
+}
+
+    .button:hover {
+        transition: 1s;
+        background-color: #4E535B;
+    }
+
+.button-style {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #343943;
+    margin: auto;
+    display: -webkit-box;
+}
+
+.button-plus {
+    font-size:32px;
+    margin: auto;
+}
+
+.button-text {
+    color: white;
+}

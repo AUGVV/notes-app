@@ -56,16 +56,6 @@ export default function App() {
 
     function inputChangedHandler(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>, id: number, type: string) {
         e.preventDefault();
-
-        var index = notes.findIndex((el: { id: number; }) => el.id === id);
-
-        if (type === 'title') {
-            notes[index].title = e.target.value;
-        }
-        else if (type === 'desc') {
-            notes[index].description = e.target.value;
-        }
-
         let changedNotes = notes.map((el: NoteObject) => {
             if (el.id === id) {
                 if (type === 'title') {
